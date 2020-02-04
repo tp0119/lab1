@@ -12,7 +12,7 @@
  *)
 
 open Lab1 ;; (* for access to your lab1 solution *)
-open CS51 ;; (* for access to the unit_test function *)
+open Absbook ;; (* for access to the unit_test function *)
 
 (* Method 1: Boolean
 
@@ -36,7 +36,7 @@ test_square_bool () ;;
 
    By making use of side effects, we can print an
    indicative message relating to each test. We will
-   use the CS51 unit-test function provided in the CS51 module.
+   use the unit-test function provided in the Absbook module.
  *)
 let test_square () =
   unit_test (square 0 = 0) "square zero";
