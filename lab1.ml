@@ -146,7 +146,11 @@ Construct an expression that uses an arithmetic operator twice, but
 evaluates to two different results dependent on the associativity of
 the operator. Use this expression to determine the associativity of
 the operator. Check your answer with a member of the course staff if
-you'd like.
+  you'd like.
+
+  20 / ( 10 / 2 )
+  (20 / 10) / 2
+
 ......................................................................*)
 
 (*======================================================================
@@ -159,24 +163,23 @@ expressions below? Test your solution by uncommenting the examples
 typing error is generated.
 ......................................................................*)
 
-(*  <--- After you've replaced the ???s, remove this start of comment line
 
-let exercise6a : ??? = 42 ;;
+let exercise6a : int = 42 ;;
 
-let exercise6b : ??? =
+let exercise6b : string =
   let greet y = "Hello " ^ y
   in greet "World!";;
 
-let exercise6c : ??? =
+let exercise6c : float -> float =
   fun x -> x +. 11.1 ;;
 
-let exercise6d : ??? =
+let exercise6d : int -> bool =
   fun x -> x < x + 1 ;;
 
-let exercise6e : ??? =
+let exercise6e : int -> float -> int =
   fun x -> fun y -> x + int_of_float y ;;
 
-and remove this whole end of comment line too. ---->  *)
+
 
 (*======================================================================
 Part 3: First-order functional programming
