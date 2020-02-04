@@ -211,9 +211,9 @@ testing.
 ......................................................................*)
 
 let square (x : int) : int  =
-  failwith "square not implemented" ;;
+  x * x ;;
 
-let exercise7 = 0 ;;
+let exercise7 = square 5 ;;
 
 (*......................................................................
 Exercise 8: Define a function, `exclaim`, that, given a string, "exclaims"
