@@ -119,6 +119,14 @@ correspond to. Check it with a member of the course staff.
 ......................................................................*)
 
 
+      -
+      ^
+     / \
+    /   \
+   ~-     3
+  /
+5
+
 (*......................................................................
 Exercise 5: Associativity plays a role in cases when two operators
 used in the concrete syntax have the same precedence. For instance,
