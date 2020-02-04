@@ -51,7 +51,7 @@ replace the `failwith` expression below with the integer `42`, so that
 you submit, the Exercise 2 unit test should then pass.
 ......................................................................*)
 
-let exercise2 () = failwith "exercise2 not implemented" ;;
+let exercise2 () = 42 ;;
 
 (* From here on, you'll want to test your lab solutions locally before
 submitting them at the end of lab to Gradescope. A simple way to do that
@@ -108,7 +108,7 @@ appropriate OCaml expression to assign the value to the variable
 `exercise3` below.
 ......................................................................*)
 
-let exercise3 () = failwith "exercise3 not implemented" ;;
+let exercise3 () = ~-(5 - 3) ;;
 
 (* Hint: The OCaml concrete expression `~- 5 - 3` does *not*
 correspond to the abstract syntax above.
@@ -140,7 +140,7 @@ the operator. Use this expression to determine the associativity of
 the operator. Check your answer with a member of the course staff if
 you'd like.
 ......................................................................*)
-  
+
 (*======================================================================
 Part 2: Types and type inference
 
@@ -169,7 +169,7 @@ let exercise6e : ??? =
   fun x -> fun y -> x + int_of_float y ;;
 
 and remove this whole end of comment line too. ---->  *)
-	
+
 (*======================================================================
 Part 3: First-order functional programming
 
@@ -256,7 +256,7 @@ Write two functions that, given a year, calculate the month
 (`computus_month`) and day (`computus_day`) of Easter in that year via
 the Computus function.
 
-In 2018, Easter took place on April 1st. Your functions should reflect 
+In 2018, Easter took place on April 1st. Your functions should reflect
 that:
 
    # computus_month 2018;;
@@ -301,7 +301,7 @@ frustrum with radii 3 and 4 and height 4 -- and you get
 
 which is (more or less) the right answer. Nonetheless, you have a
 strong sense that the code can be considerably improved. *)
-  
+
 (*......................................................................
 Exercise 11: Go over the code with your lab partner, making whatever
 modifications you think can improve the code, placing your revised
