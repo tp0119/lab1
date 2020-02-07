@@ -115,17 +115,18 @@ correspond to the abstract syntax above.
 
 ........................................................................
 Exercise 4: Draw the tree that the concrete syntax `~- 5 - 3` does
-correspond to. Check it with a member of the course staff.
+   correspond to. Check it with a member of the course staff.
+
+   -
+   ^
+  / \
+ /   \
+~-     3
+|
+5
+
 ......................................................................*)
 
-
-      -
-      ^
-     / \
-    /   \
-   ~-     3
-  /
-5
 
 (*......................................................................
 Exercise 5: Associativity plays a role in cases when two operators
