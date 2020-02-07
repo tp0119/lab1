@@ -388,8 +388,7 @@ For example,
 ......................................................................*)
 
 let rec factorial (x : int) : int =
-  if x < 0 then raise (Invalid_argument "input must be non-negative")
-  else if x = 0 then 1
+  if x = 0 then 1
   else x * (factorial (x - 1)) ;;
 
 (*......................................................................
