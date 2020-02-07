@@ -365,8 +365,8 @@ line given at <https://url.cs51.io/frustrum>.
                          (radius2 : float)
                          (height : float)
                        : float =
-         (Float.pi *. h /. 3.)
-         *. (radius1 ** 2 +. radius1 *. radius2 + .radius2 ** 2) ;;
+         (Float.pi *. height /. 3.)
+         *. (radius1 ** 2. +. radius1 *. radius2 +. radius2 ** 2.) ;;
 
 (*======================================================================
 Part 5: Utilizing recursion
