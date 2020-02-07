@@ -340,7 +340,12 @@ that you think is best, call over a staff member and go over your
 revised code together.
 ......................................................................*)
 
-(*** Place your revised version here. ***)
+(*** Place your revised version here.
+     let frustrum_volume (r1 : float) (r2 : float) (h : float) : float =
+     let volume =
+        (3.1416 *. h /. 3.) *. (a *. a +. c *. c + .a *. c) in
+     volume ;;
+ ***)
 
 (* During the code review, your boss drops by and looks over
 your proposed code. Your boss thinks that the function should be
@@ -354,6 +359,14 @@ line given at <https://url.cs51.io/frustrum>.
 
 (*** Place your updated revised version below, not as a comment,
      because we'll be unit testing it. ***)
+
+     let frustrum_volume (radius1 : float)
+                         (radius2 : float)
+                         (height : float)
+                       : float =
+         (Float.pi *. h /. 3.)
+         *. (radius1 ** 2 +. radius1 *. radius2 + .radius2 ** 2) ;;
+
 (*======================================================================
 Part 5: Utilizing recursion
 
@@ -373,8 +386,10 @@ For example,
    - : int = 1
 ......................................................................*)
 
-let factorial (x : int) : int =
-  failwith "factorial not implementated" ;;
+let rec factorial (x : int) : int =
+  if x < 0 then raise (Invalid_argument "input must be non-negative")
+  if x = 0 then 1
+  else x * (factorial (x - 1)) ;;
 
 (*......................................................................
 Exercise 14: Define a recursive function `sum_from_zero` that sums all
@@ -392,5 +407,7 @@ the mathematician Carl Freiedrich Gauss as a seven-year-old, *in his
 head*!)
 ......................................................................*)
 
-let sum_from_zero (x : int) : int =
-  failwith "sum_from_zero not implemented" ;;
+let rec sum_from_zero (x : int) : int =
+  if x = 0 then 0
+  else if x > 0 then x + sum_from_zero(x - 1)
+  else x + sum_from_zero(x + 1) ;;
