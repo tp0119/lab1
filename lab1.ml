@@ -387,8 +387,9 @@ For example,
    - : int = 1
 ......................................................................*)
 
-let rec factorial (x : int) =
-  if x = 0 then 1
+let rec factorial (x : int) : int =
+  if x = 0 then
+    1
   else x * factorial (x - 1) ;;
 
 (*......................................................................
