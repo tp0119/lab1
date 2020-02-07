@@ -387,9 +387,9 @@ For example,
    - : int = 1
 ......................................................................*)
 
-let rec factorial (x : int) : int =
+let rec factorial (x : int) =
   if x = 0 then 1
-  else x * (factorial (x - 1)) ;;
+  else x * factorial (x - 1) ;;
 
 (*......................................................................
 Exercise 14: Define a recursive function `sum_from_zero` that sums all
